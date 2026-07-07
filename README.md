@@ -39,5 +39,12 @@ The circuit serves as a simple security system, detecting motion and alarming us
 3. The system tracks elapsed time using `millis()`.
 4. When motion is detected, the LCD shows the calculated detection time, and simultaneously, the LED and buzzer go off.
 
+## How to Use
+1. Upload the sketch to the Arduino using the Arduino IDE.
+2. Wait approximately **30 seconds** while the PIR sensor calibrates.
+3. Open **Tools → Serial Monitor** and set the baud rate to **9600**.
+4. Enter the current time in the format `HH MM SS` (e.g., `14 30 00`) and press **Send**.
+5. Once the time has been entered, the system will begin monitoring for motion. When motion is detected, the LCD will display the time of the last detected motion.
+
 ## Notes
 - The circuit diagram uses a piezo buzzer symbol because Tinkercad does not have a dedicated 5 V active buzzer component.
